@@ -1,7 +1,16 @@
+:root {
+  --nav_footer-bg: #007fff;
+  --font-color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
 @charset "UTF-8";
 .navigation {
   height: 70px;
-  background: #262626;
+  background: var(--nav_footer-bg);
 }
 
 .brand {
@@ -11,11 +20,11 @@
   line-height: 70px;
   text-transform: uppercase;
   font-size: 2em;
-  font-family: 'Rancho', cursive;
+  font-family: "Rancho", cursive;
 }
 .brand a,
 .brand a:visited {
-  color: #ffffff;
+  color: var(--font-color);
   text-decoration: none;
 }
 
@@ -41,14 +50,15 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #262626;
-  color: #ffffff;
+  background: var(--nav_footer-bg);
+  color: var(--font-color);
   text-decoration: none;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581dc;
-  color: #ffffff;
+  background: #370028;
+  color: var(--font-color);
+  text-decoration: none;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -76,12 +86,12 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: #262626;
+  background: var(--nav_footer-bg);
   height: 70px;
   width: 70px;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 1024px) {
   .nav-mobile {
     display: block;
   }
@@ -103,12 +113,11 @@ nav ul li ul li a {
   nav ul li ul li a {
     padding-left: 30px;
   }
-
   .nav-dropdown {
     position: static;
   }
 }
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 1024px) {
   .nav-list {
     display: block !important;
   }
@@ -127,7 +136,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #ffffff;
+  background: var(--font-color);
   position: absolute;
   display: block;
   content: "";
@@ -159,21 +168,12 @@ article {
   padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-ul {
-    margin: 0px;
-    padding: 0px;
+- .footer-widget ul {
+  margin: 0px;
+  padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: var(--nav_footer-bg);
   position: relative;
 }
 .footer-cta {
@@ -190,13 +190,13 @@ ul {
   display: inline-block;
 }
 .cta-text h4 {
-  color: #fff;
+  color: var(--font-color);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: var(--font-color);
   font-size: 15px;
 }
 .footer-content {
@@ -215,24 +215,24 @@ ul {
   margin-bottom: 30px;
 }
 .footer-logo img {
-    max-width: 200px;
+  max-width: 200px;
 }
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: var(--font-color);
   line-height: 28px;
 }
 .footer-social-icon span {
-  color: #fff;
+  color: var(--font-color);
   display: block;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 .footer-social-icon a {
-  color: #fff;
+  color: var(--font-color);
   font-size: 16px;
   margin-right: 15px;
 }
@@ -243,17 +243,17 @@ ul {
   line-height: 38px;
   border-radius: 50%;
 }
-.facebook-bg{
-  background: #3B5998;
+.facebook-bg {
+  background: #3b5998;
 }
-.twitter-bg{
-  background: #55ACEE;
+.twitter-bg {
+  background: #55acee;
 }
-.google-bg{
-  background: #DD4B39;
+.google-bg {
+  background: #dd4b39;
 }
 .footer-widget-heading h3 {
-  color: #fff;
+  color: var(--font-color);
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -274,11 +274,11 @@ ul {
   width: 50%;
   margin-bottom: 12px;
 }
-.footer-widget ul li a:hover{
+.footer-widget ul li a:hover {
   color: #ff5e14;
 }
 .footer-widget ul li a {
-  color: #878787;
+  color: var(--font-color);
   text-transform: capitalize;
 }
 .subscribe-form {
@@ -288,24 +288,24 @@ ul {
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: var(--font-color);
 }
 .subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
 }
 .subscribe-form button i {
-  color: #fff;
+  color: var(--font-color);
   font-size: 22px;
   transform: rotate(-6deg);
 }
-.copyright-area{
+.copyright-area {
   background: #202020;
   padding: 25px 0;
 }
@@ -314,14 +314,14 @@ ul {
   font-size: 14px;
   color: #878787;
 }
-.copyright-text p a{
+.copyright-text p a {
   color: #ff5e14;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
-.footer-menu li:hover a{
+.footer-menu li:hover a {
   color: #ff5e14;
 }
 .footer-menu li a {

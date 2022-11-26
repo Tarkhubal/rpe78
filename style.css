@@ -1,0 +1,135 @@
+:root {
+  --bg-color: white;
+}
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: all 0.5s;
+  z-index: 1000;
+}
+.loader .ring {
+  height: 45px;
+  width: 45px;
+  border: 5px solid #dddddd;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .ring:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ff3d00;
+  border-top-color: transparent;
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+  text-align: center;
+  font-family: "Nunito", cursive;
+  background-color: var(--bg-color);
+  color: black;
+}
+
+h2 {
+  padding-bottom: 40px;
+}
+
+.home-buttons-list {
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+}
+
+.home-buttons-list-element {
+  height: 75px;
+}
+.list-title {
+  text-align: right;
+  width: 300px;
+}
+.list-button {
+  margin-left: 15px;
+  text-align: left;
+  margin-right: 200px;
+}
+
+@media only screen and (max-width: 798px) {
+  .list-button {
+    margin-right: 0px;
+  }
+}
+
+.return {
+  text-align: left;
+  padding-left: 25%;
+  font-size: 18pt;
+}
+
+.return span {
+  color: #007fff;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.return a:hover {
+  text-decoration: none;
+}
+.return span:hover {
+  color: red;
+}
+
+.desc {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textleft {
+  text-align: left;
+}
+
+.desc a {
+  color: red;
+}
+
+.desc h2 {
+  border-top: 2px solid grey;
+}
+
+.desc .impact {
+  font-family: Impact;
+  border: none;
+}
+
+.help-list button {
+  width: 30%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-size: 18pt;
+}
+
+.help-list button:hover {
+  background-color: red;
+}
+.help-list h2 {
+  padding: 0;
+  margin-top: 15px;
+}
